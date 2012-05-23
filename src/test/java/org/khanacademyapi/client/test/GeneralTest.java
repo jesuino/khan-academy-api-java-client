@@ -8,10 +8,10 @@ import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.khanacademyapi.client.KhanAcademyClient;
 import org.khanacademyapi.client.model.Exercise;
 import org.khanacademyapi.client.model.Playlist;
 import org.khanacademyapi.client.model.Video;
-import org.khanapi.model.client.KhanAcademyClient;
 
 /**
  * 
