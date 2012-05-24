@@ -40,8 +40,6 @@ public class GeneralTest {
 
 	@Before
 	public void createClient() {
-		System.out.println("Before!");
-		System.out.println(""+client);
 		client = new KhanAcademyClient();
 	}
 
