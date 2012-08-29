@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.codehaus.jackson.annotate.JsonProperty;
 
-public class Playlist extends KhanAcademyCommon{
+public class Playlist extends KhanAcademyCommon {
 	private String description;
 	@JsonProperty("extended_slug")
 	private String extendedSlug;
@@ -21,8 +21,40 @@ public class Playlist extends KhanAcademyCommon{
 	@JsonProperty("topic_page_url")
 	private String topicPageUrl;
 	private String id;
-	//videos may be null!
+	/**
+	 * videos may be null!
+	 */
 	private List<Video> videos;
+	@JsonProperty("community_questions_title")
+	private String communityQuestionsTitle;
+	@JsonProperty("community_questions_url")
+	private String communityQuestionsUrl;
+	@JsonProperty("init_custom_stack")
+	private String initCustomStack;
+
+	public String getCommunityQuestionsTitle() {
+		return communityQuestionsTitle;
+	}
+
+	public void setCommunityQuestionsTitle(String communityQuestionsTitle) {
+		this.communityQuestionsTitle = communityQuestionsTitle;
+	}
+
+	public String getCommunityQuestionsUrl() {
+		return communityQuestionsUrl;
+	}
+
+	public void setCommunityQuestionsUrl(String communityQuestionsUrl) {
+		this.communityQuestionsUrl = communityQuestionsUrl;
+	}
+
+	public String getInitCustomStack() {
+		return initCustomStack;
+	}
+
+	public void setInitCustomStack(String initCustomStack) {
+		this.initCustomStack = initCustomStack;
+	}
 
 	public String getDescription() {
 		return description;

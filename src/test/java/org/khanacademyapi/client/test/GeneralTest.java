@@ -32,10 +32,10 @@ public class GeneralTest {
 	/**
 	 * Calculus Playlist
 	 */
-	private int CALCULUS_SIZE = 95;
-	private int CALCULUS_TOTAL_VIDEOS = 185;
+	private int CALCULUS_SIZE = 105;
+	private int CALCULUS_TOTAL_VIDEOS = 205;
 	private int CALCULUS_TOTAL_EXERCISES = 10;
-	private int TOTAL_EXERCISES = 345;
+	private int TOTAL_EXERCISES = 366;
 	private int SUBSTRACTION_FOLLOW_UP_TOTAL = 2;
 
 	@Before
@@ -45,7 +45,7 @@ public class GeneralTest {
 
 	/**
 	 * Some tests with Playlist. If the test fail, check the size of the
-	 * playlist TODO: Remove all harcode from tests
+	 * playlist TODO: Remove all hardcode from tests
 	 */
 	@Test
 	public void testPlayList() {

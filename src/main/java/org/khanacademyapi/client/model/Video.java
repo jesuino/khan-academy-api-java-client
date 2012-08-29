@@ -4,8 +4,7 @@ import java.util.Date;
 
 import org.codehaus.jackson.annotate.JsonProperty;
 
-
-public class Video  extends KhanAcademyCommon{
+public class Video extends KhanAcademyCommon {
 	private String id;
 	@JsonProperty("date_added")
 	private Date dateAdded;
@@ -29,6 +28,16 @@ public class Video  extends KhanAcademyCommon{
 	private long views;
 	@JsonProperty("youtube_id")
 	private String youtubeId;
+	@JsonProperty("has_questions")
+	private boolean hasQuestions;
+
+	public boolean isHasQuestions() {
+		return hasQuestions;
+	}
+
+	public void setHasQuestions(boolean hasQuestions) {
+		this.hasQuestions = hasQuestions;
+	}
 
 	public Date getDateAdded() {
 		return dateAdded;
@@ -142,8 +151,6 @@ public class Video  extends KhanAcademyCommon{
 		this.youtubeId = youtubeId;
 	}
 
-
-
 	public DownloadUrls getDownloadUrls() {
 		return downloadUrls;
 	}
@@ -159,6 +166,7 @@ public class Video  extends KhanAcademyCommon{
 	public void setId(String id) {
 		this.id = id;
 	}
+
 	public static class DownloadUrls {
 		private String png;
 		private String mp4;

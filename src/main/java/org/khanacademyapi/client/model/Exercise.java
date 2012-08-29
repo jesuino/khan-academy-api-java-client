@@ -29,7 +29,7 @@ public class Exercise extends KhanAcademyCommon {
 	private String name;
 	private List<String> prerequisites;
 	@JsonProperty("related_video_readable_ids")
-	private List<String> relatedVideoReadableIds;	
+	private List<String> relatedVideoReadableIds;
 	@JsonProperty("seconds_per_fast_problem")
 	private float secondsPerFastProblem;
 	@JsonProperty("short_display_name")
@@ -39,6 +39,56 @@ public class Exercise extends KhanAcademyCommon {
 	private int vPosition;
 	@JsonProperty("related_videos")
 	private List<String> relatedVideos;
+	@JsonProperty("author_name")
+	private String authorName;
+	@JsonProperty("image_url")
+	private String imageUrl;
+	@JsonProperty("image_url_256")
+	private String imageUrl256;
+	@JsonProperty("thumbnail_image")
+	private String thumbnailImage;
+	@JsonProperty("custom_stacks")
+	private List<String> customStacks;
+
+	public List<String> getCustomStacks() {
+		return customStacks;
+	}
+
+	public void setCustomStacks(List<String> customStacks) {
+		this.customStacks = customStacks;
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
+
+	public String getImageUrl256() {
+		return imageUrl256;
+	}
+
+	public void setImageUrl256(String imageUrl256) {
+		this.imageUrl256 = imageUrl256;
+	}
+
+	public String getThumbnailImage() {
+		return thumbnailImage;
+	}
+
+	public void setThumbnailImage(String thumbnailImage) {
+		this.thumbnailImage = thumbnailImage;
+	}
+
+	public String getAuthorName() {
+		return authorName;
+	}
+
+	public void setAuthorName(String authorName) {
+		this.authorName = authorName;
+	}
 
 	public List<String> getCovers() {
 		return covers;
